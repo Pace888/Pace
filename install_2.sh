@@ -1,5 +1,5 @@
 #!/bin/sh
-check_nodejs_install(){\r
+check_nodejs_install(){
     if ! node -v
     then
 		curl -sL https://rpm.nodesource.com/setup | sudo bash -
