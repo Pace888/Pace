@@ -1,6 +1,4 @@
-
 #!/bin/sh
-
 check_nodejs_install(){
     if ! node -v
     then
