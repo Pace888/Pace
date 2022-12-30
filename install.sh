@@ -1,16 +1,4 @@
 #!/bin/sh
-check_nodejs_install(){
-    if ! node -v
-    then
-		curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
-        sudo yum install -y nodejs
-        sudo yum install -y gcc-c++ make
-        sudo npm install -g yarn
-    else
-        echo "nodejs installed"
-    fi
-}
-
 random() {
 	tr </dev/urandom -dc A-Za-z0-9 | head -c5
 	echo
